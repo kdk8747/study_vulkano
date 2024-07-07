@@ -1,6 +1,11 @@
 [package]
-name = "rust"
+name = "study_vulkano"
 version = "0.1.0"
+authors = ["DongKyoo Kim"]
 edition = "2021"
 
 [dependencies]
+vulkano = "0.34.0"
+
+[profile.dev]
+opt-level = 1
