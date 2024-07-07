@@ -5,7 +5,8 @@ authors = ["DongKyoo Kim"]
 edition = "2021"
 
 [dependencies]
-vulkano = "0.34.0"
+vulkano = { version = "0.34", default-features = false }
+winit = { version = "0.29", features = ["rwh_05"] }
 
 [profile.dev]
 opt-level = 1
