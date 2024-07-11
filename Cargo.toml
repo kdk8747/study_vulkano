@@ -9,11 +9,16 @@ name = "buffer-creation"
 path = "03-buffer-creation/main.rs"
 
 [[bin]]
+name = "compute-pipeline"
+path = "04-compute-pipeline/main.rs"
+
+[[bin]]
 name = "windowing"
 path = "07-windowing/main.rs"
 
 [dependencies]
-vulkano = { version = "0.34", default-features = false }
+vulkano = "0.34"
+vulkano-shaders = "0.34.0"
 winit = { version = "0.29", features = ["rwh_05"] }
 
 [profile.dev]
